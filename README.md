@@ -20,7 +20,7 @@
          * [Ubah NIM](https://github.com/RezaRiyaldi/pertemuan10#ubah-nim)
          * [Ubah Nilai](https://github.com/RezaRiyaldi/pertemuan10#ubah-nilai)
       * [Hapus Data](https://github.com/RezaRiyaldi/pertemuan10#hapus)  
-      * [Menu](https://github.com/RezaRiyaldi/Pertemuan9/#menu)
+      * [Menu](https://github.com/RezaRiyaldi/pertemuan10#menu)
          
 ### Latihan 6
 Konsep program :
@@ -129,6 +129,9 @@ else:
 Seperti gambar berikut.
  
 ![Lihat-1](https://github.com/RezaRiyaldi/pertemuan10/blob/master/gambar/L-1.PNG)
+ 
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
  #### Tambah()
 - Memasukan data
 - Jika sudah, maka data akan dimasukkan kedalam Dict Data_Mahasiswa
