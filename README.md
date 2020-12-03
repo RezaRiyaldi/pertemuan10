@@ -11,16 +11,16 @@
 
 ## Daftar Isi
 * [Pertemuan 10](https://github.com/RezaRiyaldi/pertemuan10#pertemuan-10)
-    * [Labspy04](https://github.com/RezaRiyaldi/Pertemuan9#Labspy-04) | [direktori](https://github.com/RezaRiyaldi/Pertemuan9/tree/main/Labspy04) | [Source Code](https://github.com/RezaRiyaldi/Pertemuan9/blob/main/Labspy04/labs04.py)
-    * [Labspy05](https://github.com/RezaRiyaldi/Pertemuan9#Labspy-05) | [direktori](https://github.com/RezaRiyaldi/Pertemuan9/tree/main/Labspy05) | [Source Code](https://github.com/RezaRiyaldi/Pertemuan9/blob/main/Labspy05/labs05.py)
-         * [Dictionary dan Variable](https://github.com/RezaRiyaldi/Pertemuan9/#--membuat-dictionary-sebagai-databasenya)
-         * [Function Tambahan](https://github.com/RezaRiyaldi/Pertemuan9/#--membuat-function-tambahan-agar-bisa-dipanggil-ketika-dibutuhkan)
-         * [Function Tambah Data](https://github.com/RezaRiyaldi/Pertemuan9/#--function-tambah-data)
-         * [Function Lihat Data](https://github.com/RezaRiyaldi/Pertemuan9/#--function-lihat-data)
-         * [Function Ubah Data](https://github.com/RezaRiyaldi/Pertemuan9/#--function-ubah-data)
-         * [Function Hapus Data](https://github.com/RezaRiyaldi/Pertemuan9/#--function-hapus-data)
-         * [Function Cari Data](https://github.com/RezaRiyaldi/Pertemuan9/#--function-cari-data)  
-         * [Menu](https://github.com/RezaRiyaldi/Pertemuan9/#menu)
+   * [Latihan 6](https://github.com/RezaRiyaldi/pertemuan10#latihan-6) | [Source Code](https://github.com/RezaRiyaldi/pertemuan10/blob/master/latihan6.py)
+   * [Praktikum](https://github.com/RezaRiyaldi/pertemuan10#praktikum) | [Source Code](https://github.com/RezaRiyaldi/pertemuan10/blob/master/praktikum.py)
+      * [Lihat Data](https://github.com/RezaRiyaldi/pertemuan10#lihat)
+      * [Tambah Data](https://github.com/RezaRiyaldi/pertemuan10#tambah)         
+      * [Ubah Data](https://github.com/RezaRiyaldi/pertemuan10#ubah)
+         * [Ubah Nama](https://github.com/RezaRiyaldi/pertemuan10#ubah-nama)
+         * [Ubah NIM](https://github.com/RezaRiyaldi/pertemuan10#ubah-nim)
+         * [Ubah Nilai](https://github.com/RezaRiyaldi/pertemuan10#ubah-nilai)
+      * [Hapus Data](https://github.com/RezaRiyaldi/pertemuan10#hapus)  
+      * [Menu](https://github.com/RezaRiyaldi/Pertemuan9/#menu)
          
 ### Latihan 6
 Konsep program :
@@ -63,6 +63,8 @@ Maka hasil akan seperti berikut
 
 ![hasil lambda](https://github.com/RezaRiyaldi/pertemuan10/blob/master/gambar/hasil.PNG)
 
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
 ### Praktikum
 Konsep Program :
 
@@ -97,6 +99,8 @@ def tidakAdaData():
     garis()
  ```
  
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
  3. Membuat Function Program
  #### Lihat()
  1. Apabila Dict `Data_Mahasiswa` masih kosong maka akan memanggil function `tidakAdaData`
@@ -145,6 +149,8 @@ Seperti gambar berikut.
  Maka program cari data akan seperti berikut.
  
  ![tambah](https://github.com/RezaRiyaldi/pertemuan10/blob/master/gambar/T-1.PNG)
+
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
 
 #### Ubah()
 1. Apabila Dict `Data_Mahasiswa` masih kosong maka akan memanggil function `tidakAdaData`
@@ -227,6 +233,8 @@ Maka program ubah Nilai akan seperti berikut.
 
 ![ubah nilai](https://github.com/RezaRiyaldi/pertemuan10/blob/master/gambar/U-Nilai.PNG)
 
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
 #### Hapus()
 1. Apabila Dict `Data_Mahasiswa` masih kosong maka akan memanggil function `tidakAdaData`
 ```python
@@ -254,4 +262,46 @@ else:
 Maka program Hapus Data akan seperti berikut.
 
 ![Hapus](https://github.com/RezaRiyaldi/pertemuan10/blob/master/gambar/H-1.PNG)
+
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
+##### Menu
+- Menggunakan infinite loop sampai loopnya jadi false
+- Apabila salah memasukkkan inputan maka akan muncul "Menu 'menu' tidak ada! Silahkan masukan [0-4]"
+- Jika benar maka function yang sudah dibuat akan dijalankan
+```python
+loop = True
+# Program
+while loop:
+    print()
+    print(71*"-")
+    print(25*"-", "Program Input Nilai", 25*"-")
+    print(71*"-")
+    print("1. Lihat Data \n2. Tambah Data \n3. Ubah Data \n4. Hapus Data \n0. Keluar")
+    print(71*"-")
+    menu = int(input("Pilih menu : "))
+    print(71*"-")
+    print()
+
+    if menu == 1:
+        lihat()       
+
+    elif menu == 2:
+        tambah()
+
+    elif menu == 3:
+        ubah() 
+
+    elif menu == 4:
+        hapus()
+
+    elif menu == 0:
+        print("Program selesai, Terima Kasih")
+        loop = False 
+
+    else:
+        print(f"Menu '{menu}' tidak ada! Silahkan masukan [0-4]")
+```
  
+[Kembali ke Daftar Isi](https://github.com/RezaRiyaldi/pertemuan10#daftar-isi)
+
